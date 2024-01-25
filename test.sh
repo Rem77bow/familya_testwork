@@ -1,5 +1,7 @@
 #!/bin/bash
-a=33;
+a=1;
 b="as35";
-c= $a + $b;
-echo $c;
+b=$(echo $b | sed 's/as/33/');
+echo $b;
+echo $(($a+$b));
+
